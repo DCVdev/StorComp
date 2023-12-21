@@ -20,6 +20,8 @@ Amazon S3: Crearemos un contenedor y un 'bucket' para poder almacenar informaci�
 
 
 ![Identificador](https://github.com/DCVdev/StorComp/assets/98882413/23efcd2d-1b99-4da7-8792-702052318b79)
+
+
 Tkinter: Interfaz gráfica.
 
 
@@ -30,6 +32,23 @@ Ghostscript: Software para tratamiento de archivos. En la aplicación se utiliza
 
 
 La aplicación funciona de la siguiente manera:
+
+
 Con un menú:
+
+
+
+
 ![menu](https://github.com/DCVdev/StorComp/assets/98882413/2c3e3a4f-18e5-406e-94ed-2348f3677783)
 
+
+
+
+Subir archivos
+
+    -Manera básica de subir un archivo
+
+
+    
+
+    https://youtu.be/uL9nQltRBIw
