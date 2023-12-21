@@ -60,5 +60,16 @@ Subir archivos
     <VIDEO EXPLICATIVO, PULSE LA IMAGEN>
 
   [![Alt text](https://img.youtube.com/vi/Z2VqIizupsc/0.jpg)](https://www.youtube.com/watch?v=Z2VqIizupsc)
-     
 
+
+
+
+
+
+Cuando no se qué archivo voy a subir, puedo verlo antes de hacerlo, así no cometo errores trabajando
+
+    -Forma para poder ver los archivos que voy a subir
+
+    <VIDEO EXPLICATIVO, PULSE LA IMAGEN>
+
+    
