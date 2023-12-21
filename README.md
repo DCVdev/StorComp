@@ -8,6 +8,9 @@ Luego necesitaremos AWS CLI, una interfaz para poder acceder a los comandos de A
 
 
 Las dependencias utilizadas para la aplicación son:
+
+
+
 Amazon S3: Crearemos un contenedor y un 'bucket' para poder almacenar información.
 ![Identificador](https://github.com/DCVdev/StorComp/assets/98882413/23efcd2d-1b99-4da7-8792-702052318b79)
 Tkinter: Interfaz gráfica.
