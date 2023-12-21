@@ -39,7 +39,8 @@ Con un menú:
 
 
 
-[![Alt text](https://img.youtube.com/vi/uL9nQltRBIw/0.jpg)](https://www.youtube.com/watch?v=uL9nQltRBIw)
+![menu](https://github.com/DCVdev/StorComp/assets/98882413/b0f78278-4c4c-4bd9-b088-aaaa4dc23eb1)
+
 
 
 
@@ -49,8 +50,6 @@ Subir archivos
 
     -Manera básica de subir un archivo
 
+    <VIDEO EXPLICATIVO, PULSE LA IMAGEN>
 
-    ![mq1](https://github.com/DCVdev/StorComp/assets/98882413/4375adcc-fddf-45a0-8713-3f39a7c508a6)
-
-
-    https://youtu.be/uL9nQltRBIw
+   [![Alt text](https://img.youtube.com/vi/uL9nQltRBIw/0.jpg)](https://www.youtube.com/watch?v=uL9nQltRBIw)
