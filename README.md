@@ -53,3 +53,12 @@ Subir archivos
     <VIDEO EXPLICATIVO, PULSE LA IMAGEN>
 
    [![Alt text](https://img.youtube.com/vi/uL9nQltRBIw/0.jpg)](https://www.youtube.com/watch?v=uL9nQltRBIw)
+
+
+
+    -Forma para identificar los archivos con sus dueños
+    <VIDEO EXPLICATIVO, PULSE LA IMAGEN>
+
+  [![Alt text](https://img.youtube.com/vi/Z2VqIizupsc/0.jpg)](https://www.youtube.com/watch?v=Z2VqIizupsc)
+     
+
