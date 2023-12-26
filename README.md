@@ -5,7 +5,7 @@ En primer lugar, para poder utilizar la aplicación, se necesita de un identific
 
 
 
-Luego necesitaremos AWS CLI, una interfaz para poder acceder a los comandos de AWS. Nos logueramos con el ID y contraseña proporcionados por IAM.
+Luego necesitaremos AWS CLI, una interfaz para poder acceder a los comandos de AWS. Iniciamos sesión con el ID y contraseña proporcionados por IAM.
 ![acceso_AWS](https://github.com/DCVdev/StorComp/assets/98882413/aa10e9ef-528f-40ae-a310-2b86366971b6)
 
 
@@ -83,4 +83,22 @@ Cuando no se qué archivo voy a subir, puedo verlo antes de hacerlo, así no com
 
 
  [![Alt text](https://img.youtube.com/vi/O-I7jqZhNQ0/0.jpg)](https://www.youtube.com/watch?v=O-I7jqZhNQ0)
+    
+
+
+
+
+Descargar archivos
+
+    -Mostrar todos los archivos del contenedor y descargar lo que seleccionemos o todos.
+    
+
+[![Alt text](https://img.youtube.com/vi/YiG5IDK-Hp4/0.jpg)](https://www.youtube.com/watch?v=YiG5IDK-Hp4)
+
+
+Descargar archivos de una persona u objeto en concreto
+
+    -Mostrar archivos de una persona u objeto en concreto
+
+[![Alt text](https://img.youtube.com/vi/tDeYfs71NoE/0.jpg)](https://www.youtube.com/watch?v=tDeYfs71NoE)
     
