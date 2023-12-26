@@ -72,4 +72,5 @@ Cuando no se qué archivo voy a subir, puedo verlo antes de hacerlo, así no com
 
     <VIDEO EXPLICATIVO, PULSE LA IMAGEN>
 
+ [![Alt text](https://img.youtube.com/vi/Kk6hXKBy3SE/0.jpg)](https://www.youtube.com/watch?v=Kk6hXKBy3SE)
     
