@@ -102,3 +102,16 @@ Descargar archivos de una persona u objeto en concreto
 
 [![Alt text](https://img.youtube.com/vi/tDeYfs71NoE/0.jpg)](https://www.youtube.com/watch?v=tDeYfs71NoE)
     
+
+
+
+La aplicación puede servir para distintos ámbitos. Desde empresas que necesiten guardar información de un mismo formato(pdf) hasta de varios formatos. Es solo cambiar el codigo
+
+
+![distinos formatos](https://github.com/DCVdev/StorComp/assets/98882413/4eca0bca-37f2-4ed9-8920-8d3aa3c72287)
+
+
+
+La compresión funciona con el procesador del ordenador, pero se puede crear un servidor especializado para no hacer trabajar a la máquina que se utiliza y devolver el archivo comprimido.
+
+Los archivos, al subirlos, se borran automáticamente para que no ocupen espacio en el disco duro y así tenerlos en la nube como una base de datos.
