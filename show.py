@@ -1,18 +1,23 @@
 from tkinter import Tk, Canvas, Entry, Text, Button, PhotoImage,Listbox,font,Scrollbar,Label
+# Importa la API AWS
 import boto3
 import os,re
-s3 = boto3.resource('s3')
-search = []#Array donde se guarda la busqueda
+s3 = boto3.resource('s3')     #Instancia el recurso S3
+search = [] #Array donde se guarda la busqueda
+#
+# Funcion que muestra los documentos del contenedor
+#
 def showfiles():
     customer = entry_1.get()
-    zs = s3.meta.client.list_objects_v2(Bucket='dcvcontainer')
-    #z = s3.meta.client.list_objects_v2(Bucket='dcvcontainer',Prefix=customer+'/')
-    s = zs.get('Contents')
-    res = [ sub['Key'] for sub in s ]
-    searching = [match for match in res if customer in match]
+    lists = s3.meta.client.list_objects_v2(Bucket='dcvcontainer') #lista los documentos del contenedor
+    s = lists.get('Contents') # Obtiene solo los contenidos de los documentos
+    res = [ sub['Key'] for sub in s ] # Muestra solo el nombre de los documentos
+    searching = [match for match in res if customer in match] # Muestra los documentos del nombre puesto en customer
     for item in searching:
-        listbox_1.insert("end",item)
-#Mostrar mensaje
+        listbox_1.insert("end",item) # Inserta los nombres de los documentos obtenidos
+#
+# Funcion que muestra el mensaje de si los archivos son descargados
+#
 def mostrar_mensaje():
     msn_text = Label(
         text="archivos descargados",
@@ -23,37 +28,48 @@ def mostrar_mensaje():
         y=700
     )
     window.after(3000, lambda: msn_text.destroy())
-#Descargar todos los archivos
+#
+# Funcion que descarga todos los archivos
+#
 def download_all():
     customer = entry_1.get()
     select = listbox_1.get(0,"end")
-    for element in select:
-        #str_files = re.sub('.*?/','',element)
-        str_files_principal = re.sub('/.*?','',element)
-        s3.meta.client.download_file('dcvcontainer',element,str_files_principal)
+    for element in select:# Lee los elementos de todo el Listbox
+        str_files_principal = re.sub('/.*?','',element) # Filtra solo el nombre para no descargar el archivo con todo el nombre completo del listbox
+        s3.meta.client.download_file('dcvcontainer',element,str_files_principal) # Descarga del contenedor los elementos mostrados en el listbox
     mostrar_mensaje()
-#Descargar los archivos seleccionados
+#
+#Funcion que descarga los archivos seleccionados
+#
 def download_files():
     customer = entry_1.get()
-    select = [listbox_1.get(i) for i in listbox_1.curselection()]
-    for selections in select:
-        #str_files = re.sub('.*?/','',selections)
-        str_files_principal = re.sub('/.*?','',selections)
-        s3.meta.client.download_file('dcvcontainer',selections,str_files_principal)
+    select = [listbox_1.get(i) for i in listbox_1.curselection()] # Guarda los elementos seleccionados con el click izquierdo del raton
+    for selections in select: #Lee los elementos guardados de "select"
+        str_files_principal = re.sub('/.*?','',selections) #Filtra solo el nombre del elemento necesario
+        s3.meta.client.download_file('dcvcontainer',selections,str_files_principal) # Descarga del contenedor los elementos seleccionados en el listbox
     mostrar_mensaje()
+#
 #Limpiar todo
+#
 def clean_all():
     listbox_1.delete(0,"end")
     entry_1.delete(0,"end")
+#
 #Cerrar ventana
+#
 def cerrar_ventana():
     window.destroy()
+#
 #Creación de ventana
+#
 window = Tk()
 w, h = window.winfo_screenwidth(), window.winfo_screenheight()
 window.geometry("%dx%d+0+0" % (w, h))
 window.configure(bg = "#FFFFFF")
+#
 #Creación de Canvas
+#
+# A partir de aqui se añade los elementos de Tkinter (buttons,listbox,entry...)
 canvas = Canvas(
     window,
     bg = "#FFFFFF",
